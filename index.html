@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chattovací Aplikace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h1>Chat s Mentorem</h1>
+        </header>
+
+        <div class="chat-box">
+            <div class="conversation">
+                <div class="message mentor">
+                    <p><strong>Mentor:</strong> Jak vám jde učení na silnici?</p>
+                </div>
+                <div class="message driver">
+                    <p><strong>Řidič:</strong> Mám trochu problémy s parkováním, mohl byste mi pomoci?</p>
+                </div>
+                <div class="message mentor">
+                    <p><strong>Mentor:</strong> Samozřejmě, rád vám pomohu. Co konkrétně vám dělá problémy?</p>
+                </div>
+                <!-- Další zprávy mohou být přidány staticky nebo dynamicky -->
+            </div>
+        </div>
+
+        <div class="input-container">
+            <textarea id="message" placeholder="Napište zprávu..." rows="4"></textarea>
+            <button onclick="sendMessage()">Odeslat</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

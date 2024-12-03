@@ -1,0 +1,90 @@
+/* Celkový styl pro stránku */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styl pro kontejner chatu */
+.chat-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
+}
+
+/* Hlavička */
+header h1 {
+    text-align: center;
+    color: #2c82ff; /* Používáme modrou barvu odpovídající designu MentorRide */
+    margin-bottom: 20px;
+}
+
+/* Kontejner pro zprávy */
+.chat-box {
+    overflow-y: auto;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+/* Styl pro jednotlivé zprávy */
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.mentor {
+    background-color: #e1f3ff;
+    align-self: flex-start;
+}
+
+.driver {
+    background-color: #e0ffe1;
+    align-self: flex-end;
+}
+
+/* Styl pro vstupní pole */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2c82ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1a60b3;
+}
